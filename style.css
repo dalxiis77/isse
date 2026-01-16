@@ -1,0 +1,246 @@
+/* DEFAULT = DARK MODE */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 20px;
+}
+
+/* Calculator */
+.calculator {
+    width: 100%;
+    max-width: 380px; /* iPad & desktop safe */
+    background: black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Theme Button */
+.theme-btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+/* Display */
+.display {
+    background: #111;
+    color: #00ffcc;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: right;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Buttons */
+button {
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: #2d2d44;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.operator { background: #ff8c00; }
+.equal { background: #00b894; grid-column: span 2; }
+.clear { background: #e17055; }
+
+/* 🌞 LIGHT MODE */
+body.light {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+body.light .calculator { background: #ffffff; }
+body.light .display { background: #f1f1f1; color: #222; }
+body.light button { background: #e0e0e0; color: #000; }
+body.light .operator { background: #ffb74d; }
+body.light .equal { background: #4db6ac; }
+body.light .clear { background: #ef9a9a; }
+body.light .theme-btn { background: #ddd; color: #000; }
+
+/* 📱 MOBILE (Phones) */
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    button {
+        padding: 16px 8px;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+}
+
+/* 📱📲 iPad / Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .calculator {
+        max-width: 420px;
+    }
+
+    .display {
+        font-size: 2.8rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+    }
+}
+/* DEFAULT = DARK MODE */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 20px;
+}
+
+/* Calculator */
+.calculator {
+    width: 100%;
+    max-width: 380px; /* iPad & desktop safe */
+    background: black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Theme Button */
+.theme-btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #444;
+    color: white;
+}
+
+/* Display */
+.display {
+    background: #111;
+    color: #00ffcc;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: right;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Buttons */
+button {
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: #2d2d44;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.operator { background: #ff8c00; }
+.equal { background: #00b894; grid-column: span 2; }
+.clear { background: #e17055; }
+
+/* 🌞 LIGHT MODE */
+body.light {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+body.light .calculator { background: #ffffff; }
+body.light .display { background: #f1f1f1; color: #222; }
+body.light button { background: #e0e0e0; color: #000; }
+body.light .operator { background: #ffb74d; }
+body.light .equal { background: #4db6ac; }
+body.light .clear { background: #ef9a9a; }
+body.light .theme-btn { background: #ddd; color: #000; }
+
+/* 📱 MOBILE (Phones) */
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    button {
+        padding: 16px 8px;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+}
+
+/* 📱📲 iPad / Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .calculator {
+        max-width: 420px;
+    }
+
+    .display {
+        font-size: 2.8rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+    }
+}
